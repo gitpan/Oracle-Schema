@@ -30,10 +30,10 @@ use ExtUtils::AutoInstall (
     -version        => '0.40',
 );
 WriteMakefile(
-    DISTNAME        => 'Oracle-Schema-0.01.tar.gz'   ,
+    DISTNAME        => 'Oracle-Schema-0.02.tar.gz'   ,
     ABSTRACT        => 'Perl class for Oracle Schema Information and Management',
     NAME            => 'Oracle::Schema'              ,
     PREREQ_PM       => {Test::Harness => 0.1,Test::More => 0.45,},
     AUTHOR          => 'geotiger2001@yahoo.com'      ,
-    VERSION         => 0.01                          ,
+    VERSION         => 0.02                          ,
 );

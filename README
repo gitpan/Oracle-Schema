@@ -131,11 +131,15 @@ METHODS
               nulls     - null or not null (req)
               colno     - column sequence number (seq)
               character_set_name - character set name
+      $cmt - {$cn}: contains comments for each column 
 
 HISTORY
     * Version 0.01
         This version is to set the framework and move the
         get_table_definition from Oracle:;DML::Common.
+
+    * Version 0.02
+        Added table tag for export.
 
 SEE ALSO (some of docs that I check often)
         Data::Describe, Oracle::Loader, CGI::Getopt, File::Xcopy,

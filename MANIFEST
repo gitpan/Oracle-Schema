@@ -2,5 +2,5 @@ Schema.pm
 test.pl
 Makefile.PL
 t/Schema.t
-Oracle-Schema-0.01.readme
+Oracle-Schema-0.02.readme
 README

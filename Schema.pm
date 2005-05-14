@@ -9,7 +9,7 @@ use Debug::EchoMessage;
 use Oracle::DML::Common qw(:db_conn);
 
 require 5.003;
-$Oracle::Schema::VERSION = 0.01;
+$Oracle::Schema::VERSION = 0.02;
 
 require Exporter;
 our @ISA         = qw(Exporter);
@@ -17,7 +17,8 @@ our @EXPORT      = qw();
 our @EXPORT_OK   = qw( get_table_definition
     );
 our %EXPORT_TAGS = (
-    all  => [@EXPORT_OK]
+    all   => [@EXPORT_OK],
+    table => [qw(get_table_definition)],
     );
 our @IMPORT_OK   = qw(
     get_dbh is_object_exist 
@@ -194,6 +195,7 @@ Return:
           nulls     - null or not null (req)
           colno     - column sequence number (seq)
           character_set_name - character set name
+  $cmt - {$cn}: contains comments for each column 
 
 =cut
 
@@ -354,6 +356,10 @@ sub get_table_definition {
 
 This version is to set the framework and move the get_table_definition
 from Oracle:;DML::Common.
+
+=item * Version 0.02
+
+Added table tag for export.
 
 =cut
 

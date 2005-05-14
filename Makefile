@@ -12,10 +12,10 @@
 
 #	ABSTRACT => q[Perl class for Oracle Schema Information and Management]
 #	AUTHOR => q[geotiger2001@yahoo.com]
-#	DISTNAME => q[Oracle-Schema-0.01.tar.gz]
+#	DISTNAME => q[Oracle-Schema-0.02.tar.gz]
 #	NAME => q[Oracle::Schema]
 #	PREREQ_PM => { Test::Harness=>q[0.1], Test::More=>q[0.45] }
-#	VERSION => q[0.01]
+#	VERSION => q[0.02]
 #	test => { TESTS=>q[t/Schema.t] }
 
 # --- MakeMaker post_initialize section:
@@ -49,11 +49,11 @@ FULL_AR = /usr/ccs/bin/ar
 # --- MakeMaker constants section:
 AR_STATIC_ARGS = cr
 NAME = Oracle::Schema
-DISTNAME = Oracle-Schema-0.01.tar.gz
+DISTNAME = Oracle-Schema-0.02.tar.gz
 NAME_SYM = Oracle_Schema
-VERSION = 0.01
-VERSION_SYM = 0_01
-XS_VERSION = 0.01
+VERSION = 0.02
+VERSION_SYM = 0_02
+XS_VERSION = 0.02
 INST_BIN = blib/bin
 INST_EXE = blib/script
 INST_LIB = blib/lib
@@ -659,7 +659,7 @@ testdb_static :: testdb_dynamic
 # --- MakeMaker ppd section:
 # Creates a PPD (Perl Package Description) for a binary distribution.
 ppd:
-	@$(PERL) -e "print qq{<SOFTPKG NAME=\"Oracle-Schema-0.01.tar.gz\" VERSION=\"0,01,0,0\">\n}. qq{\t<TITLE>Oracle-Schema-0.01.tar.gz</TITLE>\n}. qq{\t<ABSTRACT>Perl class for Oracle Schema Information and Management</ABSTRACT>\n}. qq{\t<AUTHOR>geotiger2001\@yahoo.com</AUTHOR>\n}. qq{\t<IMPLEMENTATION>\n}. qq{\t\t<DEPENDENCY NAME=\"Test-Harness\" VERSION=\"0,1,0,0\" />\n}. qq{\t\t<DEPENDENCY NAME=\"Test-More\" VERSION=\"0,45,0,0\" />\n}. qq{\t\t<OS NAME=\"$(OSNAME)\" />\n}. qq{\t\t<ARCHITECTURE NAME=\"sun4-solaris-64int\" />\n}. qq{\t\t<CODEBASE HREF=\"\" />\n}. qq{\t</IMPLEMENTATION>\n}. qq{</SOFTPKG>\n}" > Oracle-Schema-0.01.tar.gz.ppd
+	@$(PERL) -e "print qq{<SOFTPKG NAME=\"Oracle-Schema-0.02.tar.gz\" VERSION=\"0,02,0,0\">\n}. qq{\t<TITLE>Oracle-Schema-0.02.tar.gz</TITLE>\n}. qq{\t<ABSTRACT>Perl class for Oracle Schema Information and Management</ABSTRACT>\n}. qq{\t<AUTHOR>geotiger2001\@yahoo.com</AUTHOR>\n}. qq{\t<IMPLEMENTATION>\n}. qq{\t\t<DEPENDENCY NAME=\"Test-Harness\" VERSION=\"0,1,0,0\" />\n}. qq{\t\t<DEPENDENCY NAME=\"Test-More\" VERSION=\"0,45,0,0\" />\n}. qq{\t\t<OS NAME=\"$(OSNAME)\" />\n}. qq{\t\t<ARCHITECTURE NAME=\"sun4-solaris-64int\" />\n}. qq{\t\t<CODEBASE HREF=\"\" />\n}. qq{\t</IMPLEMENTATION>\n}. qq{</SOFTPKG>\n}" > Oracle-Schema-0.02.tar.gz.ppd
 
 # --- MakeMaker pm_to_blib section:
 
